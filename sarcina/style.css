@@ -1,0 +1,439 @@
+/*---Home Page---*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.ico{
+	border-radius: 50%;
+}
+
+body{
+	background-image: linear-gradient(90deg, rgba(103,255,0,1) 0%, rgba(255,248,0,1) 100%);
+	background-attachment: fixed: 
+    background-position: 100% 0%;
+    overflow: scroll-y;
+}
+
+.continut{
+	width: 80%;
+	margin:30px auto;
+	border-radius: 10px;
+}
+
+header{
+	width: 100%; 
+	overflow: hidden;
+	background-color: black;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border:2px black solid;
+	opacity: 0.8;
+	box-shadow: 0 0 10px black;	
+}
+
+header ul li {
+	list-style: none;
+	display: inline-block;
+	font-size: 25px;
+	font-weight: bold; 
+}
+
+
+
+header a{
+	text-decoration: none;
+	color: white;
+
+}
+
+ul {
+	list-style-type:none;
+  	display:flex;
+  	justify-content: center;
+}
+
+li a {
+	margin-right: 30px;
+    display: inline-block;
+    padding: 16px 16px;
+}
+
+header ul li a:hover:not(.active) {
+    background-color: whitesmoke;
+    color: rgba(103,255,0,1);
+    border-radius: 10px;
+}
+.slider{
+	max-width: 100%;
+	position: relative;
+	margin: 10px auto 0;
+	display: block;
+}
+
+.slide{
+	display: none;
+}
+
+.slide img{
+	width: 100%;
+	height: 450px;
+	border: 5px solid black;
+	border-radius: 15px 15px 0 0;
+	margin: 0!important auto;
+}
+
+.fade {
+  	-webkit-animation-name: fade;
+  	-webkit-animation-duration: 2s;
+  	animation-name: fade;
+  	animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  	from {opacity: .4} 
+  	to {opacity: 1}
+}
+
+@keyframes fade {
+  	from {opacity: .4} 
+  	to {opacity: 1}
+}
+
+.fundal{
+	margin-top: -10px;
+  	height: 70px;
+  	width: 100%;
+  	letter-spacing: 9px;
+  	text-shadow: 0 0 5px black;
+  	border: 5px solid black;
+  	font-size: 30px;
+  	background-color: black;
+  	opacity: 0.8;
+  	border-radius: 0 0 15px 15px;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+  background-color: whitesmoke;
+  opacity: 1;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: rgba(103,255,0,1);
+}
+
+.butoane{
+	margin-top: 15px;
+	text-align: center;
+}
+
+iframe{
+	width: 100%;
+	height: 400px;
+	border:2px black solid;
+	margin-top: 15px;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 0 10px black;
+}
+
+.text{
+	margin-top: 10px;
+	border-radius: 15px 15px 15px 15px;
+	width: 99.8%;
+	text-align: center;
+	font-size: 20px;
+	background-color: whitesmoke;
+	border: 1px solid black;
+    font-weight: bold;
+    letter-spacing:2px;
+    box-shadow: inset 0 0 10px #777777;
+}
+
+footer {
+	width: 100%; 
+	margin-top: 15px;
+    padding: 20px;
+    color: white;
+    border:2px black solid;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px; 
+    background-color: black;
+    opacity: 0.8;
+}
+
+/*---Rewiews Page---*/
+
+.articles {
+    float: left;
+    width: 80%;
+    padding: 10px;
+}
+
+.article {
+    padding: 20px;
+    width: 93%;
+    margin: 10px 0;
+}
+
+.article:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.article_text {
+    float: left;
+    width: 500px;
+}
+
+.heading {
+    font-size: 40px;
+}
+
+.desc {
+    font-size: 20px;
+    color: rgb(0, 0, 0, 0.9);
+}
+
+.date {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-top: 5px;
+}
+
+.article_img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    background: white;
+    float: right;
+}
+
+.message{
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 15px;
+	box-shadow: inset 0 0 10px black;
+	background-color: rgba(70, 70, 70, 0.9);
+	padding: 10px;
+	color: rgba(103,255,0,1);
+}
+
+fieldset{
+	border: 2px solid black;
+	border-radius: 15px;
+	box-shadow: inset 0 0 10px black;
+	background-color: rgba(70, 70, 70, 0.9);
+	padding: 10px;
+	color: rgba(103,255,0,1);
+}
+
+input[type=submit]{
+	display: inline-block;
+	padding: 10px 45px;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	background-color: #333;
+}
+
+input[type=submit]:hover{
+	color: black;
+	background-color: rgba(103,255,0,1);
+}
+
+/*---Login Page---*/
+
+.login-card {
+  
+  	width: 400px;
+  	background-color: black;
+    opacity: 0.8;
+  	margin: 0px auto ;
+  	border-radius: 9px;
+  	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  	min-height:440px;
+ 
+}
+
+.log_head{ 
+	margin-top: 15px;
+
+    background:rgba(103,255,0,1);
+    width:400px; 
+    height:100px; 
+    border-radius:9px 9px 0 0px; 
+}
+
+tr td{
+	color: rgba(103,255,0,1);
+}
+
+.login-card h1 {
+  text-align: center;
+  font-family:open Sans;
+  color:black;
+  font-weight:700px;
+  font-size:20px;
+  line-height:27px;
+  padding-top: 24px;
+  
+}
+
+.lock{ 
+    width:30px; 
+    height:37px; 
+    padding-top:10px;
+    display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.log_body{ 
+    padding:40px 20px 20px 20px;
+}
+
+.log_user{ 
+    background:#FEFEFE; 
+    color:#999999; 
+    border-radius: 10px; 
+    width:349px; 
+    height:31px; 
+    padding:5px; 
+    font-family:open Sans; 
+    font-weight:700px; 
+    font-size:15px; 
+    border:none; 
+}
+
+.log_Pass{
+    background:#FEFEFE; 
+    color:#999999; 
+    border-radius: 10px; 
+    width:349px; 
+    height:31px; 
+    padding:5px; 
+    font-family:open Sans; 
+    font-weight:700px; 
+    font-size:15px; 
+    border:none;}
+
+
+.login-submit{ 
+    background:rgba(103,255,0,1); 
+    border:none; 
+    border-radius: 10px; 
+    width:359px; 
+    height:36px; 
+    cursor:pointer; 
+    font-family:open Sans;
+    font-weight:700px; 
+    font-size:15px; 
+    color:black; 
+}
+
+.log_body a{ 
+    text-decoration:none; 
+    color:rgba(255,248,0,1); 
+    font-family:open Sans; 
+    font-weight:900px; 
+    font-size:15px; 
+    line-height:21px;
+}
+
+/*---arangamentele pentru ecrane mai mici---*/
+
+@media screen and (max-width: 1000px)
+{
+    .continut{
+    	width: 80%;
+    }
+
+ }
+
+@media screen and (min-width: 300px)
+{
+    .continut{
+    	width: 80%;
+     }
+}
+
+@media screen and (max-width: 1000px)
+{
+    .continut{
+    	width: 80%;
+    }
+
+ }
+
+@media screen and (min-width: 300px)
+{
+    .continut{
+    	width: 80%;
+     }
+}
+
+@media screen and (max-width:1000px) {
+    nav {
+		width: 100%;
+	}
+	
+	nav ul li {
+		font: bold 15px;
+	}
+}
+
+@media screen and (max-width:800px) {
+    nav {
+		width: 100%;
+	}
+	
+	nav ul li {
+		font: bold 12px ; 	
+	}
+
+	nav ul li a {
+		padding: 3px 4px;
+		
+	}
+}
+
+@media screen and (max-width:600px) {
+    nav {
+		width: 100%;
+	}
+	
+	nav ul li {
+		font: bold 10px ; 
+	}
+
+	nav ul li a {
+		padding: 3px 4px;
+		
+	}
+}
+
+@media screen and (max-width:400px) {
+    nav {
+		width: 100%;
+	}
+	
+	nav ul li {
+		font: bold 7px ; 
+	}
+
+	nav ul li a {
+		padding: 3px 4px;
+		
+	}
+}
